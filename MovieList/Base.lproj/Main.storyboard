@@ -171,35 +171,28 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="her" translatesAutoresizingMaskIntoConstraints="NO" id="WAx-2Q-aqb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSD-Mc-yJ5">
-                                        <rect key="frame" x="178" y="106" width="58" height="44"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2v-R8-U0L">
+                                        <rect key="frame" x="176" y="106" width="62" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.065862996688741723" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="58" id="viG-b3-gCZ"/>
+                                            <constraint firstAttribute="height" constant="44" id="xB0-tA-WUf"/>
+                                            <constraint firstAttribute="width" constant="58" id="ze4-W7-VLv"/>
                                         </constraints>
-                                        <color key="tintColor" white="0.0" alpha="0.082289942052980139" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F0-7k-LdK">
-                                        <rect key="frame" x="116" y="176" width="50" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="play.circle.fill" catalog="system" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="WAx-2Q-aqb" firstAttribute="centerY" secondItem="bSD-Mc-yJ5" secondAttribute="centerY" id="4LX-0G-jd3"/>
-                                    <constraint firstAttribute="bottom" secondItem="bSD-Mc-yJ5" secondAttribute="bottom" constant="78" id="A51-Xe-7NW"/>
                                     <constraint firstAttribute="height" constant="228" id="B7Q-Er-iWD"/>
-                                    <constraint firstItem="WAx-2Q-aqb" firstAttribute="centerX" secondItem="bSD-Mc-yJ5" secondAttribute="centerX" id="H5j-N7-bum"/>
+                                    <constraint firstAttribute="bottom" secondItem="N2v-R8-U0L" secondAttribute="bottom" constant="77" id="Gxr-kJ-ELe"/>
                                     <constraint firstAttribute="width" constant="414" id="UMp-4t-n1L"/>
                                     <constraint firstItem="WAx-2Q-aqb" firstAttribute="leading" secondItem="SIN-nj-n4E" secondAttribute="leading" id="jTS-cd-TC0"/>
                                     <constraint firstAttribute="bottom" secondItem="WAx-2Q-aqb" secondAttribute="bottom" constant="-28" id="rLR-1O-d4u"/>
+                                    <constraint firstItem="N2v-R8-U0L" firstAttribute="centerX" secondItem="WAx-2Q-aqb" secondAttribute="centerX" id="ylq-hF-mN1"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -233,7 +226,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Break" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-EE-4D0">
-                                <rect key="frame" x="0.0" y="175" width="736" height="584"/>
+                                <rect key="frame" x="0.0" y="175" width="414" height="584"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="420" id="Cul-pm-GYM"/>
                                     <constraint firstAttribute="height" constant="584" id="Lsj-5v-6pa"/>
@@ -427,7 +420,6 @@
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="play.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="play.fill" catalog="system" width="117" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
