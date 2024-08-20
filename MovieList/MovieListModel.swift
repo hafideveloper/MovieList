@@ -24,5 +24,4 @@ var movieList:[Movie] = [
     Movie(image: UIImage(named:"notice_to_quit"), title:"Notice To Quit"),
     Movie(image: UIImage(named:"saturday_night_ver3"), title:"Saturday Night V3"),
     Movie(image: UIImage(named:"transformers_one_ver16"), title:"Transformers V16"),
-
 ]
