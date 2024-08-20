@@ -97,7 +97,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zAU-As-9R9">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="zAU-As-9R9" customClass="MovieCollectionViewCell" customModule="MovieList" customModuleProvider="target">
                                         <rect key="frame" x="35.5" y="0.0" width="343" height="274"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w0u-Kx-r5U">
@@ -113,14 +113,36 @@
                                                         <constraint firstAttribute="width" constant="220" id="yg9-1z-1Gt"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-oi-RMH">
+                                                    <rect key="frame" x="136" y="233" width="71" height="33"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="Button">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="16" name="Helvetica"/>
+                                                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <color key="baseBackgroundColor" red="0.67605184040156474" green="0.68274542297979801" blue="0.68274542297979801" alpha="0.63930567052980136" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </buttonConfiguration>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="uUv-be-bWd" firstAttribute="leading" secondItem="w0u-Kx-r5U" secondAttribute="leading" constant="61" id="0h7-D5-l6D"/>
                                                 <constraint firstAttribute="trailing" secondItem="uUv-be-bWd" secondAttribute="trailing" constant="61" id="GaQ-6k-UoK"/>
                                                 <constraint firstItem="uUv-be-bWd" firstAttribute="top" secondItem="w0u-Kx-r5U" secondAttribute="top" id="vaV-Y1-qGq"/>
+                                                <constraint firstItem="wlF-oi-RMH" firstAttribute="centerX" secondItem="uUv-be-bWd" secondAttribute="centerX" id="w08-ex-GJL"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="343" height="274"/>
+                                        <connections>
+                                            <outlet property="movieImageView" destination="uUv-be-bWd" id="odA-2w-ogt"/>
+                                            <outlet property="movieTitleButton" destination="wlF-oi-RMH" id="3Tr-jJ-r2f"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -155,6 +177,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="iJn-V7-aGE"/>
                     <navigationItem key="navigationItem" id="gdb-kY-aWZ"/>
+                    <connections>
+                        <outlet property="myCollectionview" destination="3Y2-wo-PnG" id="ls4-8D-AyL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
