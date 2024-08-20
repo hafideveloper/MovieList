@@ -17,6 +17,11 @@ class ViewController: UIViewController {
         myCollectionview.dataSource = self
         myCollectionview.delegate = self
         myCollectionview.collectionViewLayout = UICollectionViewFlowLayout()
+        if let flowLayout = myCollectionview.collectionViewLayout as?
+            UICollectionViewFlowLayout {
+            flowLayout.scrollDirection = .horizontal
+        }
+            
     }
     
 }
