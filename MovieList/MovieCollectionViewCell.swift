@@ -14,6 +14,7 @@ class MovieCollectionViewCell:UICollectionViewCell {
     
     func setup(movie:Movie) {
         movieImageView.image = movie.image
-        movieTitleButton.titleLabel?.text = movie.title
+        movieImageView.layer.cornerRadius = 40.0
+        movieTitleButton.setTitle(movie.title, for: UIControl.State.normal)
     }
 }

@@ -50,9 +50,6 @@
                                         <rect key="frame" x="108" y="68" width="75" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
-                                        <connections>
-                                            <segue destination="wTo-dg-mfv" kind="show" id="cwP-bh-jtB"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -86,7 +83,7 @@
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Y2-wo-PnG">
                                 <rect key="frame" x="0.0" y="480" width="414" height="340"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="Nzk-In-0It"/>
                                 </constraints>
@@ -113,8 +110,8 @@
                                                         <constraint firstAttribute="width" constant="220" id="yg9-1z-1Gt"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-oi-RMH">
-                                                    <rect key="frame" x="136" y="233" width="71" height="33"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-oi-RMH">
+                                                    <rect key="frame" x="136" y="230" width="71" height="36"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="filled">
                                                         <attributedString key="attributedTitle">
@@ -134,8 +131,10 @@
                                             <constraints>
                                                 <constraint firstItem="uUv-be-bWd" firstAttribute="leading" secondItem="w0u-Kx-r5U" secondAttribute="leading" constant="61" id="0h7-D5-l6D"/>
                                                 <constraint firstAttribute="trailing" secondItem="uUv-be-bWd" secondAttribute="trailing" constant="61" id="GaQ-6k-UoK"/>
+                                                <constraint firstItem="wlF-oi-RMH" firstAttribute="top" secondItem="w0u-Kx-r5U" secondAttribute="top" constant="230" id="L1g-nI-soE"/>
                                                 <constraint firstItem="uUv-be-bWd" firstAttribute="top" secondItem="w0u-Kx-r5U" secondAttribute="top" id="vaV-Y1-qGq"/>
                                                 <constraint firstItem="wlF-oi-RMH" firstAttribute="centerX" secondItem="uUv-be-bWd" secondAttribute="centerX" id="w08-ex-GJL"/>
+                                                <constraint firstItem="wlF-oi-RMH" firstAttribute="bottom" secondItem="w0u-Kx-r5U" secondAttribute="bottomMargin" id="wfj-3J-dPq"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="343" height="274"/>
@@ -234,16 +233,16 @@
             </objects>
             <point key="canvasLocation" x="-1001.4492753623189" y="754.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="0l4-qj-JNf">
             <objects>
-                <viewController id="wTo-dg-mfv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wTo-dg-mfv" customClass="DetailViewController" customModule="MovieList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lIe-9w-6ef">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIN-nj-n4E">
-                                <rect key="frame" x="0.0" y="117" width="414" height="228"/>
+                                <rect key="frame" x="0.0" y="73" width="414" height="228"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="her" translatesAutoresizingMaskIntoConstraints="NO" id="WAx-2Q-aqb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
@@ -303,7 +302,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Break" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-EE-4D0">
-                                <rect key="frame" x="0.0" y="175" width="414" height="584"/>
+                                <rect key="frame" x="0.0" y="175" width="736" height="584"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="420" id="Cul-pm-GYM"/>
                                     <constraint firstAttribute="height" constant="584" id="Lsj-5v-6pa"/>

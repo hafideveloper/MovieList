@@ -46,12 +46,22 @@ extension ViewController:UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout
                         collectionViewLayout: UICollectionViewLayout, sizeForItemAt
                         indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200.0, height: 300.0)
+        return CGSize(width: 300.0, height: 300.0)
     }
 }
 
 extension ViewController:UICollectionViewDelegate {
     func collectionView(_ collectionView:UICollectionView, didSelectItemAt indexPath:IndexPath) {
-        print("SELECTED MOVIE:" + movieList[indexPath.row].title)
+        //print("SELECTED MOVIE:" + movieList[indexPath.row].title)
+        
+        if let myNavController = self.navigationController {
+            let storyBoard = UIStoryboard(name:"Main", bundle: nil)
+            var detailViewController:DetailViewController =
+            storyBoard.instantiateViewController(withIdentifier: "DetailViewController")
+            as! DetailViewController
+            
+            detailViewController.selectedIndex = indexPath.row
+            myNavController.pushViewController(detailViewController, animated:true)
+        }
     }
 }
