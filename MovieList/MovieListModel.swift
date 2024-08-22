@@ -11,10 +11,16 @@ import UIKit
 struct Movie {
     var image:UIImage!
     var title:String!
+    var desc:String!
+    var trailer:String!
+    var duration:Int!
+    var releaseDate:String!
+    var genre:String!
+    var rating:String!
 }
 
 var movieList:[Movie] = [
-    Movie(image: UIImage(named: "amber_alert"), title: "Amber Alert"),
+    Movie(image: UIImage(named: "amber_alert"), title: "Amber Alert", desc: "Movie Description will be here", trailer: "https://www.youtube.com/watch?v=Hlo3o8um1FA", duration:122, releaseDate: "11.11.11", genre:"Drama"),
     Movie(image: UIImage(named:"apartment_seven_a"), title:"Apartment Seven A"),
     Movie(image: UIImage(named:"bonhoeffer_ver2"), title:"Bonnoeffer Ver2"),
     Movie(image: UIImage(named:"jackpot_ver2"), title:"Jackpot V2"),
